@@ -9,6 +9,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap" rel="stylesheet">
+    <script>
+        function validate(){
+            var name=document.getElementById("name").value;
+            var number=document.getElementById("number").value;
+            var gender=document.getElementById("gen").value;
+            var age=document.getElementById("age").value;
+            if(name==""){
+                alert("Enter Your Name");
+                focus.name;
+                return false;
+            }
+            else if(number==""){
+                alert("Enter Your Number");
+                focus.number;
+                return false;
+            }
+            else if(age==""){
+                alert("Enter Your Age");
+                focus.age;
+                return false;
+            }
+        }
+    </script>
 </head>
 <link rel="stylesheet" href="styles.css">
 <body>
@@ -35,20 +58,24 @@
     </header>
     <div class="container">
         <h1>Join the Fit-Club</h1>
-        <form action="subscribe.html" method="get">
+        <form  action="subscribe.html" onsubmit="return validate()" method="get">
             <div class="form-group">
-                <input type="text" name="" placeholder="Enter Your Name">
+                <input type="text" name="" placeholder="Enter Your Name" id="name">
             </div>
             <div class="form-group">
-                <input type="text" name="" placeholder="Enter Your Number">
+                <input type="text" name="" placeholder="Enter Your Number" id="number">
             </div>
             <div class="form-group">
-                <input type="text" name="" placeholder="Enter Your Gender">
+                <!--input type="text" name="" placeholder="Enter Your Gender" id="gender"-->
+                <select name="" id="gen" >
+                    <option value="Male" selected>Male</option>
+                    <option value="Female">Female</option>
+                </select>
             </div>
             <div class="form-group">
-                <input type="text" name="" placeholder="Enter Your Age">
+                <input type="text" name="" placeholder="Enter Your Age" id="age">
             </div>
-            <button class="btn" on>Submit</button>
+            <input type="submit" class="btn" value="Submit">
         </form>
     </div>
     <div class="footer">
