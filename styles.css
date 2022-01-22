@@ -1,0 +1,301 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(images/bg13.jpg);
+    font-family: 'Dongle', sans-serif;
+    font-size: 26px;
+}
+
+.left {
+    display: inline-block;
+    color: white;
+    left: 36px;
+    top: 20px;
+    position: absolute;
+}
+
+.left img {
+    width: 70px;
+}
+
+.left div {
+    text-align: center;
+    line-height: 10px;
+    font-size: 30px;
+    color: white;
+}
+
+.mid {
+    display: block;
+    width: 35%;
+    margin: 20px auto;
+    color: white;
+}
+
+.right {
+    display: inline-block;
+    color: white;
+    right: 36px;
+    top: 40px;
+    position: absolute;
+}
+.right a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 29px;
+}
+
+.right a:hover,
+.right a.active {
+    text-decoration: underline;
+    color: darkgrey;
+    border: 2px solid white;
+    border-radius: 20px ;
+}
+.navbar {
+    display: inline-block;
+    color: white;
+}
+
+.navbar li {
+    display: inline-block;
+    color: white;
+
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 29px;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+    text-decoration: underline;
+    color: darkgrey;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+.btn{
+    padding: 5px;
+    color: white;
+    border: 2px solid grey;
+    border-radius: 10px;
+    background-color: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn:hover{
+    text-decoration: underline;
+}
+.container {
+    border: 2px solid white;
+    color: white;
+    margin: 61px 34px;
+    padding: 50px;
+    width: 30%;
+    border-radius: 10px;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.container button {
+    display: block;
+    width: 23%;
+    margin: auto;
+}
+.container h2 a{
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 29px;    
+}
+.container h2 a:hover,
+    .container h2 a.active {
+        text-decoration: underline;
+        color: darkgrey;
+        border: 2px solid white;
+        border-radius: 20px ;
+}
+.form-group input {
+    text-align: center;
+    margin: 15px auto;
+    padding: 6px;
+    display: block;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;     
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.footer h1{
+    display: inline-block;
+}
+.container h4 a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 29px;    
+}
+.container h4 a:hover,
+.container h4 a.active {
+    text-decoration: underline;
+    color: darkgrey;
+    border: 2px solid white;
+    border-radius: 20px ;
+}
+
+
+@media (max-width:1300px){
+    header .left div{
+        font-size: 18px;
+    }
+    header .left img{
+        width: 50px;
+
+    }
+    header .mid{
+        margin: 10px auto;
+        width: 50%;
+    }
+    header .mid a{
+        font-size:15px ;
+        margin: 10px auto;
+        border-radius: 10px;
+    }
+    header .right{
+        top: 37px;
+    }
+    header .right a{
+        font-size: 15px;
+        border-radius: 10px;
+    }
+    .container{
+        padding: 30px;
+        font-size: 20px;
+        width: 50%;
+    }
+    
+    
+}
+
+@media (max-width:650px){
+    body{
+        background-size: 1000px;
+        background-repeat:repeat-y ;
+    }
+    header .left div{
+        font-size: 18px;
+    }
+    header .left img{
+        width: 50px;
+
+    }
+    header .mid{
+        margin: 5px auto;
+        width: 70%;
+    }
+    header .mid a{
+        font-size:15px ;
+        margin: 10px auto;
+        border-radius: 5px;
+        padding: 2px;
+    }
+    header .right{
+        top: 30px;
+        right:1px;
+    }
+    header .right a{
+        font-size: 15px;
+        border-radius: 1px;
+        padding: 1px;
+    }
+    .container{
+        padding: 30px;
+        font-size: 20px;
+        width: 70%;
+    }
+    
+    .footer{
+        font-size: 15px;
+    }
+}
+@media (max-width:420px){
+    header .left{
+        left: 5px;
+    }
+    header .left div{
+        font-size: 12px;
+    }
+    header .left img{
+        width: 35px;
+
+    }
+    header .mid{
+        margin: 5px auto;
+        width: 92%;
+    }
+    header .mid a{
+        font-size:15px ;
+        margin: 10px auto;
+        border-radius: 5px;
+        padding: 2px;
+       
+    }
+    header .right{
+        top: 31px;
+        right:1px;
+    }
+    header .right a{
+        font-size: 15px;
+        border-radius: 1px;
+        padding: 1px;
+    }
+    .container{
+        padding: 30px;
+        font-size: 30px;
+        width: 70%;
+    }
+    .container h1{
+        margin: 5px auto;
+        font-size: 25px;
+    }
+    .container h2{
+        margin: 5px auto;
+        font-size: 25px;
+    }
+    .container h2 a{
+        margin: 5px auto;
+        font-size: 25px;
+    }
+    .container h4{
+        margin: 5px auto;
+        font-size: 25px;
+    }
+    .container h4 a{
+        margin: 5px auto;
+        font-size: 20px;
+    }
+    .container form input{
+        width: 250px;
+        font-size: 20px;
+    }
+    .container button{
+        width: 50%;
+        font-size: 20px;
+    }
+    .footer{
+        font-size: 15px;
+    }   
+}
