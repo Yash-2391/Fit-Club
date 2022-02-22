@@ -1,9 +1,15 @@
-body {
+*{
     margin: 0;
     padding: 0;
+}
+body {
     background-image: url(images/bg13.jpg);
     font-family: 'Dongle', sans-serif;
     font-size: 26px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover; 
 }
 
 .left {
@@ -301,4 +307,7 @@ body {
     .footer{
         font-size: 15px;
     }   
+}
+main{
+    height: 100vh;
 }
